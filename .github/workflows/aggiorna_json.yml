@@ -30,4 +30,6 @@ jobs:
           git config user.email "github-actions@github.com"
           git add docs/earn_nt_net_dashboard.json
           git commit -m "Aggiorna JSON Eurostat" || exit 0
+          git fetch origin main
+          git rebase origin/main
           git push
