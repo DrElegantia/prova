@@ -146,7 +146,7 @@ def to_records(df, cols):
 
 def main():
     requested_year = "2024"
-    out_path = Path("public/earn_nt_net_dashboard.json")
+    out_path = Path("docs/earn_nt_net_dashboard.json")
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
     long_df, years = load_data_long()
